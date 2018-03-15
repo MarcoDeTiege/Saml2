@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IdentityModel.Metadata;
+﻿using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
-using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-using System.Security.Cryptography.Xml;
 using System.Web;
 
 namespace Sustainsys.Saml2.StubIdp

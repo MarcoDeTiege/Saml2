@@ -1,15 +1,14 @@
-﻿using System;
+﻿using Sustainsys.Saml2.Internal;
+using Sustainsys.Saml2.Metadata;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IdentityModel.Metadata;
 using System.Linq;
-using Sustainsys.Saml2.Internal;
-using Sustainsys.Saml2.Metadata;
-using Sustainsys.Saml2.Saml2P;
-using System.Diagnostics.CodeAnalysis;
-using System.Collections.ObjectModel;
+
 
 namespace Sustainsys.Saml2.Configuration
 {
@@ -18,6 +17,7 @@ namespace Sustainsys.Saml2.Configuration
     /// </summary>
     public class SustainsysSaml2Section : ConfigurationSection
     {
+
         private static readonly SustainsysSaml2Section current =
             (SustainsysSaml2Section)ConfigurationManager.GetSection("sustainsys.saml2");
 
@@ -35,6 +35,7 @@ namespace Sustainsys.Saml2.Configuration
         /// <summary>
         /// Current config as read from app/web.config.
         /// </summary>
+        
         public static SustainsysSaml2Section Current
         {
             get
@@ -125,9 +126,11 @@ namespace Sustainsys.Saml2.Configuration
 
         const string modulePath = "modulePath";
         /// <summary>
+
         /// Application root relative path for Saml2 endpoints. The 
         /// default is "Saml2".
         /// </summary>
+        
         [ConfigurationProperty(modulePath, IsRequired = false, DefaultValue = "/Saml2")]
         [RegexStringValidator("/.*")]
         public string ModulePath
@@ -366,6 +369,7 @@ namespace Sustainsys.Saml2.Configuration
         const string compatibility = nameof(compatibility);
 
         /// <summary>
+        
         /// Compatibility settings. Can be used to make Saml2 accept
         /// certain non-standard behaviour.
         /// </summary>
@@ -376,6 +380,17 @@ namespace Sustainsys.Saml2.Configuration
             {
                 return (CompatibilityElement)base[compatibility];
             }
+        }
+
+        /// <summary>
+        /// Client TLS Certificate to add to the artifact resolve SOAP request.
+        /// </summary>
+        [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Tls",
+            Justification = "TLS is a well known abbreviation for Transport Layer Security")]
+        [ConfigurationProperty("artifactResolutionTlsCertificate")]
+        public CertificateElement ArtifactResolutionTlsCertificate
+        {
+            get { return (CertificateElement) base["artifactResolutionTlsCertificate"]; }
         }
     }
 }

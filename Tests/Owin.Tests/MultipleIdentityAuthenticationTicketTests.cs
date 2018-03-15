@@ -1,10 +1,8 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Security.Claims;
+﻿using FluentAssertions;
 using Microsoft.Owin.Security;
-using FluentAssertions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
-using Sustainsys.Saml2.Owin;
+using System.Security.Claims;
 
 namespace Sustainsys.Saml2.Owin.Tests
 {

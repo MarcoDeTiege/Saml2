@@ -1,9 +1,8 @@
-﻿using Sustainsys.Saml2.Saml2P;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using FluentAssertions;
-using System.Xml;
 using Sustainsys.Saml2.Exceptions;
+using Sustainsys.Saml2.Saml2P;
+using System;
 
 namespace Sustainsys.Saml2.Tests.Saml2P
 {

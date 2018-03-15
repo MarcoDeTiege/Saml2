@@ -1,23 +1,23 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
-using System.Text;
-using System.Collections.Specialized;
-using System.Security.Claims;
-using System.Xml.Linq;
-using System.Reflection;
-using System.Threading;
+using NSubstitute;
+using Sustainsys.Saml2.Configuration;
 using Sustainsys.Saml2.HttpModule;
 using Sustainsys.Saml2.TestHelpers;
-using NSubstitute;
-using System.Web.Mvc;
-using System.Web;
-using Sustainsys.Saml2.Configuration;
-using System.IdentityModel.Metadata;
 using Sustainsys.Saml2.WebSso;
-using System.Web.Security;
+using System;
+using System.Collections.Specialized;
+using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
+using System.Reflection;
+using System.Security.Claims;
+using System.Text;
+using System.Threading;
+using System.Web;
+using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Security;
+using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Mvc.Tests
 {

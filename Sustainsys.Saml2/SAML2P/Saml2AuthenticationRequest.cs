@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
+﻿using Sustainsys.Saml2.WebSso;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
-using Sustainsys.Saml2.Configuration;
-using Sustainsys.Saml2.Internal;
-using Sustainsys.Saml2.WebSso;
 
 namespace Sustainsys.Saml2.Saml2P
 {

@@ -1,5 +1,5 @@
-﻿using System.Configuration;
-using Sustainsys.Saml2.Saml2P;
+﻿using Sustainsys.Saml2.Saml2P;
+using System.Configuration;
 
 namespace Sustainsys.Saml2.Configuration
 {

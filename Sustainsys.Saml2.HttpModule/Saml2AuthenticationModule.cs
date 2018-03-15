@@ -2,7 +2,6 @@
 using Sustainsys.Saml2.WebSso;
 using System;
 using System.Diagnostics.CodeAnalysis;
-using System.Net;
 using System.Web;
 
 namespace Sustainsys.Saml2.HttpModule

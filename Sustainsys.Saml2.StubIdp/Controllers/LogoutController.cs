@@ -4,9 +4,7 @@ using Sustainsys.Saml2.Saml2P;
 using Sustainsys.Saml2.StubIdp.Models;
 using Sustainsys.Saml2.WebSso;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Sustainsys.Saml2.StubIdp.Controllers

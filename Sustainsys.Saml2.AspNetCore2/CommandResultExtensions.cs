@@ -1,8 +1,7 @@
-﻿using Sustainsys.Saml2.WebSso;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Http;
-using System;
+using Sustainsys.Saml2.WebSso;
 using System.Text;
 using System.Threading.Tasks;
 

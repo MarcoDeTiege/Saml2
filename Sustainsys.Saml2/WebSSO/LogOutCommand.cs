@@ -1,15 +1,14 @@
-﻿using System;
-using Sustainsys.Saml2.Configuration;
-using System.IdentityModel.Metadata;
-using System.Security.Claims;
-using System.Net;
-using Sustainsys.Saml2.Saml2P;
+﻿using Sustainsys.Saml2.Configuration;
 using Sustainsys.Saml2.Exceptions;
-using System.Globalization;
-using System.Configuration;
-using System.Linq;
-using System.Security.Cryptography.Xml;
 using Sustainsys.Saml2.Internal;
+using Sustainsys.Saml2.Saml2P;
+using System;
+using System.Configuration;
+using System.Globalization;
+using System.IdentityModel.Metadata;
+using System.Linq;
+using System.Net;
+using System.Security.Claims;
 
 namespace Sustainsys.Saml2.WebSso
 {

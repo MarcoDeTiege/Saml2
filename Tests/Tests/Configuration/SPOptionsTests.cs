@@ -1,12 +1,12 @@
-﻿using System;
-using System.Linq;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sustainsys.Saml2.Configuration;
-using System.IdentityModel.Metadata;
-using FluentAssertions;
 using Sustainsys.Saml2.Saml2P;
-using System.Security.Cryptography.Xml;
 using Sustainsys.Saml2.TestHelpers;
+using System;
+using System.IdentityModel.Metadata;
+using System.Linq;
+using System.Security.Cryptography.Xml;
 
 namespace Sustainsys.Saml2.Tests.Configuration
 {
@@ -226,6 +226,23 @@ namespace Sustainsys.Saml2.Tests.Configuration
             subject.ServiceCertificates.Add(new ServiceCertificate { Use = CertificateUse.Encryption, Certificate = SignedXmlHelper.TestCert2 });
 
             subject.SigningServiceCertificate.Should().Be(null);
+        }
+
+        [TestMethod]
+        public void SPOptions_ArtifactResolutionTlsCertificate_NullWhenEmpty()
+        {
+            var subject = new SPOptions();
+
+            subject.ArtifactResolutionTlsCertificate.Should().Be(null);
+        }
+
+        [TestMethod]
+        public void SPOptions_ArtifactResolutionTlsCertificate_LoadsFromConfig()
+        {
+            var config = SustainsysSaml2Section.Current;
+            var subject = new SPOptions(config);
+
+            subject.ArtifactResolutionTlsCertificate.Should().NotBe(null);
         }
 
         [TestMethod]

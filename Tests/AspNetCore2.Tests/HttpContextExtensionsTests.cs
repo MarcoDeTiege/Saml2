@@ -1,17 +1,10 @@
 ﻿using FluentAssertions;
-using Sustainsys.Saml2.WebSso;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Primitives;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NSubstitute;
+using Sustainsys.Saml2.WebSso;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections;
-using Sustainsys.Saml2;
 using System.Security.Claims;
 
 namespace Sustainsys.Saml2.AspNetCore2.Tests

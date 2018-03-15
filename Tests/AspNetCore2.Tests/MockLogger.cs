@@ -1,6 +1,5 @@
-﻿using System;
-using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
+﻿using Microsoft.Extensions.Logging;
+using System;
 
 namespace Sustainsys.Saml2.AspNetCore2.Tests
 {

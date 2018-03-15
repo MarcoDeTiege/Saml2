@@ -1,11 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
-using System;
-using NSubstitute;
+﻿using FluentAssertions;
 using Microsoft.Extensions.Logging;
-using Sustainsys.Saml2;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Options;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NSubstitute;
+using System;
 
 namespace Sustainsys.Saml2.AspNetCore2.Tests
 {

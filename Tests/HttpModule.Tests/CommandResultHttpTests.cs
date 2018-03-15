@@ -1,16 +1,13 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sustainsys.Saml2.WebSso;
-using Sustainsys.Saml2.HttpModule;
-using FluentAssertions;
 using NSubstitute;
-using System.Web;
-using System.Net;
-using System.Web.Security;
-using System.Text;
-using System.Linq;
-using System.IdentityModel.Tokens;
+using Sustainsys.Saml2.WebSso;
+using System;
 using System.IdentityModel.Metadata;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.Security;
 
 namespace Sustainsys.Saml2.HttpModule.Tests
 {

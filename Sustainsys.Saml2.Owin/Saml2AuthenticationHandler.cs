@@ -1,15 +1,12 @@
-﻿using Sustainsys.Saml2.Configuration;
-using Sustainsys.Saml2.WebSso;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Microsoft.Owin.Infrastructure;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Infrastructure;
+using Sustainsys.Saml2.WebSso;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Metadata;
 using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Sustainsys.Saml2.Owin

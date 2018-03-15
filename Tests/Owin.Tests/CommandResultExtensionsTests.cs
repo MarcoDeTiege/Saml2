@@ -1,11 +1,11 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
-using System.Net;
 using Sustainsys.Saml2.WebSso;
-using FluentAssertions;
+using System;
 using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
+using System.IO;
+using System.Net;
 
 namespace Sustainsys.Saml2.Owin.Tests
 {

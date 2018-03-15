@@ -1,10 +1,10 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
+using Sustainsys.Saml2.Saml2P;
+using System;
+using System.IdentityModel.Metadata;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
-using System.IdentityModel.Metadata;
-using Sustainsys.Saml2.Saml2P;
 
 namespace Sustainsys.Saml2.Tests.Saml2P
 {

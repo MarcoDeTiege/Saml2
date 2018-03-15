@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IdentityModel.Tokens;
-using System.Linq;
 
 namespace Sustainsys.Saml2.Internal
 {

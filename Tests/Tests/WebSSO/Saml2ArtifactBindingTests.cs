@@ -1,18 +1,18 @@
-﻿using Sustainsys.Saml2.WebSso;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
+using Sustainsys.Saml2.Saml2P;
+using Sustainsys.Saml2.TestHelpers;
+using Sustainsys.Saml2.Tests.Helpers;
+using Sustainsys.Saml2.WebSso;
 using System;
 using System.Collections.Generic;
-using System.Net;
-using System.Web;
 using System.IdentityModel.Metadata;
+using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
-using System.Linq;
-using Sustainsys.Saml2.Saml2P;
-using System.Reflection;
-using Sustainsys.Saml2.Tests.Helpers;
-using Sustainsys.Saml2.TestHelpers;
+using System.Web;
 
 namespace Sustainsys.Saml2.Tests.WebSSO
 {

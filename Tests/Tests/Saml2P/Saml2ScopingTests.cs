@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
-using Sustainsys.Saml2.Saml2P;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sustainsys.Saml2.Saml2P;
 using System;
 
 namespace Sustainsys.Saml2.Tests.Saml2P

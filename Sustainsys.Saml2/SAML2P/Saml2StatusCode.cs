@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sustainsys.Saml2.Saml2P
+﻿namespace Sustainsys.Saml2.Saml2P
 {
     /// <summary>
     /// Status codes, mapped against states in section 3.2.2.2 in the SAML2 spec.

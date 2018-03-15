@@ -1,23 +1,9 @@
-﻿using System.IO;
-using System.Net.Mime;
-using Sustainsys.Saml2.StubIdp.Models;
+﻿using Sustainsys.Saml2.StubIdp.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Collections.Concurrent;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Sustainsys.Saml2.Mvc;
-using System.IdentityModel.Metadata;
-using Sustainsys.Saml2.Configuration;
-using System.IdentityModel.Tokens;
-using System.Configuration;
-using Sustainsys.Saml2.Saml2P;
-using Sustainsys.Saml2.WebSso;
-using Sustainsys.Saml2.HttpModule;
-using Newtonsoft.Json.Schema;
-using Newtonsoft.Json.Linq;
-using System.Net;
 
 namespace Sustainsys.Saml2.StubIdp.Controllers
 {

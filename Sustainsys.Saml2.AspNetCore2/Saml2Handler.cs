@@ -1,14 +1,11 @@
-﻿using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using System;
-using Sustainsys.Saml2.WebSso;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.DataProtection;
-using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
+using Sustainsys.Saml2.WebSso;
+using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 
 namespace Sustainsys.Saml2.AspNetCore2
 {

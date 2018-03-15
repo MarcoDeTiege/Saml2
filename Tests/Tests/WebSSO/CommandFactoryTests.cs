@@ -1,7 +1,7 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
 using Sustainsys.Saml2.WebSso;
+using System;
 
 namespace Sustainsys.Saml2.Tests.WebSso
 {

@@ -1,12 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentAssertions;
+﻿using FluentAssertions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sustainsys.Saml2.Exceptions;
 using Sustainsys.Saml2.Saml2P;
+using System;
 
 namespace Sustainsys.Saml2.Tests.Exceptions
 {

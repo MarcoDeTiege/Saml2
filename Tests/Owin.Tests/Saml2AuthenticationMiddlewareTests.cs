@@ -1,31 +1,31 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Microsoft.Owin;
-using Owin;
 using Microsoft.Owin.Security;
-using System.Collections.Generic;
-using System.Linq;
-using System.IO;
-using System.Text;
-using System.Security.Claims;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Owin;
 using Sustainsys.Saml2.Configuration;
-using System.Xml.Linq;
-using System.Threading.Tasks;
-using System.IdentityModel.Tokens;
-using System.IdentityModel.Metadata;
-using System.Reflection;
-using System.Threading;
 using Sustainsys.Saml2.Saml2P;
 using Sustainsys.Saml2.WebSso;
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Metadata;
+using System.IdentityModel.Tokens;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Security.Claims;
 using System.Security.Principal;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Owin.Tests
 {
-    using Saml2.Exceptions;
-    using Sustainsys.Saml2.TestHelpers;
     using Microsoft.Owin.Security.DataProtection;
     using NSubstitute;
+    using Saml2.Exceptions;
+    using Sustainsys.Saml2.TestHelpers;
     using System.Configuration;
     using System.Net.Http;
     using System.Security.Cryptography.Xml;

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Sustainsys.Saml2.StubIdp.App_Start;
 using System.Web.Optimization;
-using Sustainsys.Saml2.StubIdp.App_Start;
 
 namespace Sustainsys.Saml2.StubIdp
 {

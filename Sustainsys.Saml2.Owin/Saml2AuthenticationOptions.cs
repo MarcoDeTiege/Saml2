@@ -1,6 +1,6 @@
-﻿using Sustainsys.Saml2.Configuration;
-using Microsoft.Owin.Security;
+﻿using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.DataProtection;
+using Sustainsys.Saml2.Configuration;
 
 namespace Sustainsys.Saml2.Owin
 {

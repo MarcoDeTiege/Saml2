@@ -1,12 +1,6 @@
-﻿using Sustainsys.Saml2.Saml2P;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentAssertions;
-using Sustainsys.Saml2.WebSso;
+using Sustainsys.Saml2.Saml2P;
 using System.IdentityModel.Metadata;
 using System.Xml.Linq;
 

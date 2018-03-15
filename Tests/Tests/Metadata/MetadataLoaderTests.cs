@@ -1,10 +1,8 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IdentityModel.Metadata;
-using FluentAssertions;
-using System.Xml.Linq;
-using System.Linq;
 using Sustainsys.Saml2.Metadata;
+using System;
+using System.Linq;
 
 namespace Sustainsys.Saml2.Tests.Metadata
 {

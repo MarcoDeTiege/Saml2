@@ -1,13 +1,11 @@
 ﻿using FluentAssertions;
-using Sustainsys.Saml2.WebSso;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sustainsys.Saml2.WebSso;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sustainsys.Saml2.Owin.Tests
 {

@@ -1,16 +1,12 @@
 ﻿using Sustainsys.Saml2.Metadata;
 using Sustainsys.Saml2.Saml2P;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IdentityModel.Configuration;
 using System.IdentityModel.Metadata;
-using System.IdentityModel.Services.Configuration;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sustainsys.Saml2.Configuration
 {
@@ -54,6 +50,7 @@ namespace Sustainsys.Saml2.Configuration
             ModulePath = configSection.ModulePath;
             PublicOrigin = configSection.PublicOrigin;
             Organization = configSection.Organization;
+            ArtifactResolutionTlsCertificate = configSection.ArtifactResolutionTlsCertificate.LoadCertificate();
             OutboundSigningAlgorithm = XmlHelpers.GetFullSigningAlgorithmName(configSection.OutboundSigningAlgorithm);
             MinIncomingSigningAlgorithm = XmlHelpers.GetFullSigningAlgorithmName(configSection.MinIncomingSigningAlgorithm);
             AuthenticateRequestSigningBehavior = configSection.AuthenticateRequestSigningBehavior;
@@ -285,6 +282,12 @@ namespace Sustainsys.Saml2.Configuration
                 return signingCertificates.FirstOrDefault();
             }
         }
+
+        /// <summary>
+        /// Client TLS Certificate to add to the artifact resolve SOAP request.
+        /// </summary>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Tls", Justification = "TLS is a well known abbreviation for Transport Layer Security")]
+        public X509Certificate2 ArtifactResolutionTlsCertificate { get; set; }
 
         /// <summary>
         /// Certificates to be published in metadata

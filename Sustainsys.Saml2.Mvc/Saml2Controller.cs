@@ -1,11 +1,9 @@
-﻿using System;
-using System.Net;
-using System.Web.Mvc;
-using System.IdentityModel.Services;
+﻿using Sustainsys.Saml2.Configuration;
 using Sustainsys.Saml2.HttpModule;
-using Sustainsys.Saml2.Configuration;
 using Sustainsys.Saml2.WebSso;
+using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Web.Mvc;
 
 namespace Sustainsys.Saml2.Mvc
 {

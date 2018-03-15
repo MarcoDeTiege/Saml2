@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Sustainsys.Saml2.Metadata;
 using Sustainsys.Saml2.Saml2P;
-using System;
 using Sustainsys.Saml2.WebSso;
+using System;
+using System.Collections.Generic;
 using System.IdentityModel.Metadata;
-using Sustainsys.Saml2.Metadata;
 
 namespace Sustainsys.Saml2.Configuration
 {

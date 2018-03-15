@@ -1,11 +1,11 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FluentAssertions;
 using Microsoft.Owin;
-using FluentAssertions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sustainsys.Saml2.WebSso;
+using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using Sustainsys.Saml2.WebSso;
 
 namespace Sustainsys.Saml2.Owin.Tests
 {

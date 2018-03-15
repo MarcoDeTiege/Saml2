@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
-using System.Xml.Linq;
-using System.IdentityModel.Tokens;
-using System.Xml;
 using Sustainsys.Saml2.Saml2P;
-using System.Linq;
+using System;
 using System.IdentityModel.Metadata;
+using System.IdentityModel.Tokens;
+using System.Linq;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Tests.Saml2P
 {

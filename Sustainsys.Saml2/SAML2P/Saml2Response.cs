@@ -1,19 +1,18 @@
-﻿using System;
+﻿using Sustainsys.Saml2.Configuration;
+using Sustainsys.Saml2.Exceptions;
+using Sustainsys.Saml2.Internal;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Cryptography.Xml;
 using System.Xml;
-using Sustainsys.Saml2.Configuration;
-using System.IdentityModel.Metadata;
-using System.Security.Cryptography;
-using System.IdentityModel.Services;
-using Sustainsys.Saml2.Internal;
-using Sustainsys.Saml2.Exceptions;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Sustainsys.Saml2.Saml2P
 {

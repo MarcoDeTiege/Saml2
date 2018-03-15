@@ -1,6 +1,5 @@
 ﻿using Sustainsys.Saml2.Internal;
 using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography;
 
 namespace Sustainsys.Saml2

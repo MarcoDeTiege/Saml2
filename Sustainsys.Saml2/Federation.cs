@@ -2,15 +2,11 @@
 using Sustainsys.Saml2.Metadata;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
 using System.IdentityModel.Metadata;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Security.Cryptography.X509Certificates;
 using System.IdentityModel.Tokens;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
 
 namespace Sustainsys.Saml2
 {

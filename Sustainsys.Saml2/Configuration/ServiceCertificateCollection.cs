@@ -1,10 +1,8 @@
 ﻿using Sustainsys.Saml2.Internal;
 using System;
 using System.Collections.ObjectModel;
-using System.Reflection;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
-using System.Xml;
 
 namespace Sustainsys.Saml2.Configuration
 {

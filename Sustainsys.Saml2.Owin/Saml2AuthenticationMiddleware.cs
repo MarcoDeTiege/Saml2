@@ -1,16 +1,11 @@
 ﻿using Microsoft.Owin;
+using Microsoft.Owin.Logging;
+using Microsoft.Owin.Security;
+using Microsoft.Owin.Security.DataProtection;
 using Microsoft.Owin.Security.Infrastructure;
 using Owin;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Owin.Security;
-using Microsoft.Owin.Security.DataProtection;
-using Microsoft.Owin.Security.DataHandler;
 using System.Configuration;
-using Microsoft.Owin.Logging;
 
 namespace Sustainsys.Saml2.Owin
 {

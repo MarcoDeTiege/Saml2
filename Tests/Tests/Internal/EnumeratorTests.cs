@@ -1,8 +1,7 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections;
-using FluentAssertions;
 using Sustainsys.Saml2.Internal;
+using System.Collections;
 
 namespace Sustainsys.Saml2.Tests.Internal
 {

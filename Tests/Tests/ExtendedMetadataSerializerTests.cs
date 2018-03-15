@@ -1,16 +1,15 @@
-﻿using System;
-using System.Globalization;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
-using System.Text;
-using FluentAssertions;
 using Sustainsys.Saml2.Metadata;
-using System.IdentityModel.Metadata;
-using System.Xml.Linq;
 using Sustainsys.Saml2.WebSso;
-using System.Linq;
+using System;
+using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
+using System.IO;
+using System.Linq;
 using System.ServiceModel.Security;
+using System.Text;
+using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Tests
 {

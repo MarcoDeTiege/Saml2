@@ -1,15 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Primitives;
 using NSubstitute;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Options;
+using System.Linq;
 
 namespace Sustainsys.Saml2.AspNetCore2.Tests
 {

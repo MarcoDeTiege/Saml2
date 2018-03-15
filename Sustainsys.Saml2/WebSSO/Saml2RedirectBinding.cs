@@ -1,7 +1,7 @@
 ﻿using Sustainsys.Saml2.Configuration;
 using Sustainsys.Saml2.Exceptions;
-using Sustainsys.Saml2.Saml2P;
 using Sustainsys.Saml2.Internal;
+using Sustainsys.Saml2.Saml2P;
 using System;
 using System.Globalization;
 using System.IdentityModel.Metadata;

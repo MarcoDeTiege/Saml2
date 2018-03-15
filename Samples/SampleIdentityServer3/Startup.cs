@@ -1,24 +1,20 @@
 ﻿using IdentityServer3.Core.Configuration;
-using Owin;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using IdentityServer3.Core.Services.InMemory;
-using Microsoft.Owin;
+using IdentityServer3.Core.Extensions;
 using IdentityServer3.Core.Models;
-using Sustainsys.Saml2.Owin;
-using Sustainsys.Saml2.Configuration;
-using System.IdentityModel.Metadata;
-using Sustainsys.Saml2;
-using System.IdentityModel.Selectors;
-using System.Security.Cryptography.X509Certificates;
+using Microsoft.Owin;
+using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OpenIdConnect;
-using System.Threading.Tasks;
+using Owin;
 using Serilog;
-using Microsoft.Owin.Security;
-using IdentityServer3.Core.Extensions;
+using Sustainsys.Saml2;
+using Sustainsys.Saml2.Configuration;
+using Sustainsys.Saml2.Owin;
+using System;
+using System.IdentityModel.Metadata;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
+using System.Web;
 
 [assembly: OwinStartupAttribute(typeof(SampleIdentityServer3.Startup))]
 

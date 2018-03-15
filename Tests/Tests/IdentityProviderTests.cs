@@ -1,21 +1,21 @@
-﻿using System.Linq;
-using FluentAssertions;
-using Sustainsys.Saml2.Configuration;
-using Sustainsys.Saml2.Tests.Helpers;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sustainsys.Saml2.Configuration;
+using Sustainsys.Saml2.Metadata;
+using Sustainsys.Saml2.Saml2P;
+using Sustainsys.Saml2.TestHelpers;
+using Sustainsys.Saml2.Tests.Helpers;
+using Sustainsys.Saml2.WebSso;
 using System;
 using System.Configuration;
 using System.IdentityModel.Metadata;
-using Sustainsys.Saml2.Saml2P;
-using Sustainsys.Saml2.WebSso;
-using Sustainsys.Saml2.Metadata;
-using System.Threading;
-using System.Security.Cryptography;
 using System.IdentityModel.Tokens;
-using System.Security.Cryptography.X509Certificates;
+using System.Linq;
 using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
-using Sustainsys.Saml2.TestHelpers;
+using System.Threading;
 
 namespace Sustainsys.Saml2.Tests
 {

@@ -1,10 +1,7 @@
 ﻿using Sustainsys.Saml2.Metadata;
 using Sustainsys.Saml2.WebSso;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Metadata;
-using System.Linq;
-using System.Web;
 
 namespace Sustainsys.Saml2.StubIdp.Models
 {

@@ -1,7 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Runtime.Serialization;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sustainsys.Saml2.Exceptions;
+using System;
+using System.Runtime.Serialization;
 
 namespace Sustainsys.Saml2.Tests.Exceptions
 {

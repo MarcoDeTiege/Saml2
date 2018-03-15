@@ -1,13 +1,8 @@
 ﻿using Sustainsys.Saml2.Internal;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 using System.Security.Claims;
 
 namespace Sustainsys.Saml2.WebSso

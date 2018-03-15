@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
-using Sustainsys.Saml2.Saml2P;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sustainsys.Saml2.Saml2P;
 using System;
 using System.IdentityModel.Metadata;
 using System.Xml.Linq;

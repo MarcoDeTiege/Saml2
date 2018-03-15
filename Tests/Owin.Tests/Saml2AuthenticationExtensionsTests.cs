@@ -1,9 +1,8 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
 using Owin;
-using Sustainsys.Saml2.Owin;
-using FluentAssertions;
+using System;
 
 namespace Sustainsys.Saml2.Owin.Tests
 {

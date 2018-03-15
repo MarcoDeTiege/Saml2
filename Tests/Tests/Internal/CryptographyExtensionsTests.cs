@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sustainsys.Saml2.Internal;
 using Sustainsys.Saml2.TestHelpers;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Xml;
 

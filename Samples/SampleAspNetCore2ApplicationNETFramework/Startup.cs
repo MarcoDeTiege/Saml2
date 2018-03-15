@@ -1,10 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -12,8 +7,10 @@ using Microsoft.Extensions.DependencyInjection;
 using SampleAspNetCore2ApplicationNETFramework.Data;
 using SampleAspNetCore2ApplicationNETFramework.Services;
 using System.IdentityModel.Metadata;
+
 using Sustainsys.Saml2;
 using System.Security.Cryptography.X509Certificates;
+using Sustainsys.Saml2.AspNetCore2;
 
 namespace SampleAspNetCore2ApplicationNETFramework
 {
@@ -50,6 +47,7 @@ namespace SampleAspNetCore2ApplicationNETFramework
             services.AddAuthentication()
                 .AddSaml2(options => 
                 {
+                    
                     options.SPOptions.EntityId = new EntityId("https://localhost:44342/Saml2");
                     options.IdentityProviders.Add(
                         new IdentityProvider(

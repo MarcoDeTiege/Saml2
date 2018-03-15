@@ -1,12 +1,5 @@
-﻿using Sustainsys.Saml2.Configuration;
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Metadata;
-using System.IO;
-using System.Linq;
+﻿using System.IdentityModel.Metadata;
 using System.Security.Cryptography.X509Certificates;
-using System.Web;
-using System.Xml;
 
 namespace Sustainsys.Saml2.Metadata
 {

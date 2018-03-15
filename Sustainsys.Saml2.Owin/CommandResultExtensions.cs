@@ -1,11 +1,7 @@
-﻿using Sustainsys.Saml2.WebSso;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Microsoft.Owin.Security.DataProtection;
+using Sustainsys.Saml2.WebSso;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace Sustainsys.Saml2.Owin
 {

@@ -4,7 +4,6 @@ using System;
 using System.Globalization;
 using System.IdentityModel.Tokens;
 using System.Web.Mvc;
-using System.Xml;
 using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.StubIdp.Controllers

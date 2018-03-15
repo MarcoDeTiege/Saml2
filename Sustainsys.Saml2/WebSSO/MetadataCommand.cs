@@ -1,14 +1,6 @@
 ﻿using Sustainsys.Saml2.Configuration;
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Metadata;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
-using System.Xml.Linq;
 using Sustainsys.Saml2.Metadata;
+using System;
 
 namespace Sustainsys.Saml2.WebSso
 {

@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IdentityModel.Metadata;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Linq;
-using Sustainsys.Saml2.Internal;
 using System.IdentityModel.Tokens;
 using System.Security.Cryptography.X509Certificates;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Saml2P
 {

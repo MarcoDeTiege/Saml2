@@ -1,6 +1,5 @@
-﻿using System;
-using Sustainsys.Saml2.Saml2P;
-using System.Diagnostics.CodeAnalysis;
+﻿using Sustainsys.Saml2.Saml2P;
+using System;
 using System.Collections.Generic;
 
 namespace Sustainsys.Saml2

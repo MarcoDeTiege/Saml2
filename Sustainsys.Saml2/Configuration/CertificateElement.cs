@@ -1,11 +1,11 @@
-﻿using Sustainsys.Saml2.Internal;
+﻿
+using Sustainsys.Saml2.Internal;
 using System;
 using System.Configuration;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
-using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-using System.Web;
+
 
 namespace Sustainsys.Saml2.Configuration
 {
@@ -36,14 +36,9 @@ namespace Sustainsys.Saml2.Configuration
         [ConfigurationProperty("fileName")]
         public string FileName
         {
-            get
-            {
-                return (string)this["fileName"];
-            }
-            internal set
-            {
-                base["fileName"] = value;
-            }
+
+            get { return (string) this["fileName"]; }
+            internal set { base["fileName"] = value; }
         }
 
         /// <summary>
@@ -53,10 +48,8 @@ namespace Sustainsys.Saml2.Configuration
         [ExcludeFromCodeCoverage]
         public StoreName StoreName
         {
-            get
-            {
-                return (StoreName)this["storeName"];
-            }
+
+            get { return (StoreName) this["storeName"]; }
         }
 
         /// <summary>
@@ -66,10 +59,8 @@ namespace Sustainsys.Saml2.Configuration
         [ExcludeFromCodeCoverage]
         public StoreLocation StoreLocation
         {
-            get
-            {
-                return (StoreLocation)this["storeLocation"];
-            }
+
+            get { return (StoreLocation) this["storeLocation"]; }
         }
 
         /// <summary>
@@ -79,10 +70,8 @@ namespace Sustainsys.Saml2.Configuration
         [ExcludeFromCodeCoverage]
         public string FindValue
         {
-            get
-            {
-                return (string)this["findValue"];
-            }
+
+            get { return (string) this["findValue"]; }
         }
 
         /// <summary>
@@ -92,10 +81,8 @@ namespace Sustainsys.Saml2.Configuration
         [ExcludeFromCodeCoverage]
         public X509FindType X509FindType
         {
-            get
-            {
-                return (X509FindType)this["x509FindType"];
-            }
+
+            get { return (X509FindType) this["x509FindType"]; }
         }
 
         /// <summary>

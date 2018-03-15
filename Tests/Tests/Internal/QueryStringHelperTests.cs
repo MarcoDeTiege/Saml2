@@ -1,9 +1,7 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
 using Sustainsys.Saml2.Internal;
-using System.Collections.Specialized;
-using System.Web;
+using System;
 using System.Linq;
 
 namespace Sustainsys.Saml2.Tests.Internal

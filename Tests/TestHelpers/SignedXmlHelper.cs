@@ -1,13 +1,13 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using System.Xml;
-using System.Security.Cryptography.Xml;
-using System.Security.Cryptography;
+﻿using Sustainsys.Saml2.Internal;
+using System;
+using System.Collections.Generic;
 using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
-using Sustainsys.Saml2.Internal;
 using System.Reflection;
-using System.Collections.Generic;
-using System;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Cryptography.Xml;
+using System.Xml;
 
 namespace Sustainsys.Saml2.TestHelpers
 {

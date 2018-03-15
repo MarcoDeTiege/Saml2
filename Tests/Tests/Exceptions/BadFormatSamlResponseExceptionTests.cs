@@ -1,6 +1,5 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
 using Sustainsys.Saml2.Exceptions;
 
 namespace Sustainsys.Saml2.Tests.Exceptions

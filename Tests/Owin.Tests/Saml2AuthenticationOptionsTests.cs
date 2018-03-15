@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sustainsys.Saml2.Owin;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Microsoft.Owin.Security;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.IdentityModel.Metadata;
 
 namespace Sustainsys.Saml2.Owin.Tests

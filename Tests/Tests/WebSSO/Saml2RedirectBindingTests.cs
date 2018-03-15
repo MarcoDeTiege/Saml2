@@ -1,15 +1,15 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
 using NSubstitute;
-using System.Web;
-using Sustainsys.Saml2.WebSso;
-using Sustainsys.Saml2.Tests.WebSSO;
-using System.Security.Cryptography;
-using System.Text;
 using Sustainsys.Saml2.Exceptions;
-using System.Security.Cryptography.Xml;
 using Sustainsys.Saml2.TestHelpers;
+using Sustainsys.Saml2.Tests.WebSSO;
+using Sustainsys.Saml2.WebSso;
+using System;
+using System.Security.Cryptography;
+using System.Security.Cryptography.Xml;
+using System.Text;
+using System.Web;
 
 namespace Sustainsys.Saml2.Tests.WebSso
 {

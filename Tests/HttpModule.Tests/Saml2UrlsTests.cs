@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using Sustainsys.Saml2.TestHelpers;
-using Sustainsys.Saml2.WebSso;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
+using Sustainsys.Saml2.TestHelpers;
+using Sustainsys.Saml2.WebSso;
 using System;
 using System.Collections.Specialized;
 using System.Web;

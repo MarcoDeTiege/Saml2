@@ -1,10 +1,8 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.IdentityModel.Tokens;
-using FluentAssertions;
-using System.Collections.Generic;
 using System.Security.Claims;
-using Sustainsys.Saml2.Internal;
 using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Tests

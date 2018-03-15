@@ -1,22 +1,19 @@
-﻿using System.Collections.Generic;
-using Sustainsys.Saml2.Configuration;
+﻿using Sustainsys.Saml2.Configuration;
+using Sustainsys.Saml2.Metadata;
+using Sustainsys.Saml2.Saml2P;
+using Sustainsys.Saml2.WebSso;
 using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Configuration;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IdentityModel.Metadata;
 using System.IdentityModel.Tokens;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Security.Cryptography.Xml;
-using Sustainsys.Saml2.Internal;
-using Sustainsys.Saml2.Metadata;
-using Sustainsys.Saml2.Saml2P;
-using Sustainsys.Saml2.WebSso;
-using System.Threading.Tasks;
 using System.Net;
-using System.Collections.Concurrent;
 using System.Security.Claims;
-using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 
 namespace Sustainsys.Saml2
 {

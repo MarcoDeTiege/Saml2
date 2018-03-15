@@ -1,8 +1,5 @@
-﻿using Sustainsys.Saml2.Configuration;
-using Sustainsys.Saml2.WebSso;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
-using System;
+﻿using Microsoft.AspNetCore.Authentication;
+using Sustainsys.Saml2.Configuration;
 
 namespace Sustainsys.Saml2.AspNetCore2
 {

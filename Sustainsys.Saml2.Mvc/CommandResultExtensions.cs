@@ -1,14 +1,6 @@
 ﻿using Sustainsys.Saml2.WebSso;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.IdentityModel.Services;
-using System.IdentityModel.Tokens;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Sustainsys.Saml2.Mvc

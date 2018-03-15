@@ -1,22 +1,19 @@
-﻿using System;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
 using SampleOwinApplication.Models;
-using Sustainsys.Saml2.Owin;
-using Sustainsys.Saml2.Configuration;
-using System.IdentityModel.Metadata;
-using System.Globalization;
-using Sustainsys.Saml2.Metadata;
 using Sustainsys.Saml2;
+using Sustainsys.Saml2.Configuration;
+using Sustainsys.Saml2.Metadata;
+using Sustainsys.Saml2.Owin;
 using Sustainsys.Saml2.WebSso;
+using System;
+using System.Globalization;
+using System.IdentityModel.Metadata;
 using System.Security.Cryptography.X509Certificates;
 using System.Web.Hosting;
-using System.IdentityModel.Selectors;
-using System.IdentityModel.Tokens;
 
 namespace SampleOwinApplication
 {

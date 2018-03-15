@@ -3,14 +3,8 @@ using Sustainsys.Saml2.Exceptions;
 using Sustainsys.Saml2.Saml2P;
 using System;
 using System.Configuration;
-using System.IdentityModel.Metadata;
-using System.IdentityModel.Services;
-using System.IdentityModel.Tokens;
 using System.Net;
 using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
-using System.Web;
 using System.Xml;
 
 namespace Sustainsys.Saml2.WebSso

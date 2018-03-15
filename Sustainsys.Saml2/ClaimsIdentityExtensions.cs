@@ -1,8 +1,8 @@
 ﻿using System;
-using System.IdentityModel.Tokens;
-using System.Security.Claims;
-using System.Linq;
 using System.IdentityModel.Metadata;
+using System.IdentityModel.Tokens;
+using System.Linq;
+using System.Security.Claims;
 
 namespace Sustainsys.Saml2
 {

@@ -1,8 +1,7 @@
-﻿using System;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.IdentityModel.Tokens;
-using FluentAssertions;
-using System.Linq;
 using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Tests

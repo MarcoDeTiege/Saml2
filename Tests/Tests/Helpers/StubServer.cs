@@ -1,14 +1,14 @@
 ﻿using Microsoft.Owin;
 using Microsoft.Owin.Hosting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Owin;
+using Sustainsys.Saml2.TestHelpers;
+using Sustainsys.Saml2.WebSso;
 using System;
 using System.Collections.Generic;
-using Owin;
-using Sustainsys.Saml2.WebSso;
 using System.IO;
-using System.Xml.Linq;
 using System.Security.Cryptography.Xml;
-using Sustainsys.Saml2.TestHelpers;
+using System.Xml.Linq;
 
 namespace Sustainsys.Saml2.Tests.Helpers
 {

@@ -1,10 +1,7 @@
 ﻿using Sustainsys.Saml2.Configuration;
 using Sustainsys.Saml2.Internal;
 using System;
-using System.IdentityModel.Metadata;
 using System.IdentityModel.Selectors;
-using System.IdentityModel.Services;
-using System.IdentityModel.Services.Configuration;
 using System.IdentityModel.Tokens;
 using System.Security.Claims;
 
