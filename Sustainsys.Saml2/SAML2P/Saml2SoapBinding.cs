@@ -1,7 +1,9 @@
 ﻿using Sustainsys.Saml2.Internal;
 using System;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
@@ -28,7 +30,7 @@ namespace Sustainsys.Saml2.Saml2P
         {
             return string.Format(
                 CultureInfo.InvariantCulture,
-                soapFormatString, 
+                soapFormatString,
                 payload
             );
         }
@@ -52,25 +54,37 @@ namespace Sustainsys.Saml2.Saml2P
         /// <param name="payload">Message payload</param>
         /// <param name="destination">Destination endpoint</param>
         /// <param name="signingServiceCertificate"></param>
-        /// <param name="artifactResolutionTlsCertificate"></param>
+        /// <param name="resolver"></param>
         /// <returns>Response.</returns>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming",
             "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Tls",
             Justification = "TLS is a well known abbreviation for Transport Layer Security")]
         public static XmlElement SendSoapRequest(string payload, Uri destination,
-            X509Certificate2 signingServiceCertificate, X509Certificate2 artifactResolutionTlsCertificate)
+            X509Certificate2 signingServiceCertificate, Func<Uri, string, string> resolver)
         {
             AssertDestinationIsValid(destination);
 
-            using (var client = new ClientCertificateWebClient(artifactResolutionTlsCertificate))
+            if (resolver == null)
+            {
+                resolver = DefaultArtifactResolver;
+            }
+
+            var message = BuildSoapMesssage(payload, signingServiceCertificate);
+
+            var response = resolver(destination, message);
+
+            return ExtractBody(response);
+        }
+
+        private static string DefaultArtifactResolver(Uri destination, string message)
+        {
+            using (var client = new WebClient())
             {
                 client.Headers.Add("SOAPAction", "http://www.oasis-open.org/committees/security");
 
-                var message = BuildSoapMesssage(payload, signingServiceCertificate);
-
                 var response = client.UploadString(destination, message);
 
-                return ExtractBody(response);
+                return response;
             }
         }
 

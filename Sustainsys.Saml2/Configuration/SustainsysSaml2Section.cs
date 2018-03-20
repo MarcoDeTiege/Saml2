@@ -381,16 +381,5 @@ namespace Sustainsys.Saml2.Configuration
                 return (CompatibilityElement)base[compatibility];
             }
         }
-
-        /// <summary>
-        /// Client TLS Certificate to add to the artifact resolve SOAP request.
-        /// </summary>
-        [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Tls",
-            Justification = "TLS is a well known abbreviation for Transport Layer Security")]
-        [ConfigurationProperty("artifactResolutionTlsCertificate")]
-        public CertificateElement ArtifactResolutionTlsCertificate
-        {
-            get { return (CertificateElement) base["artifactResolutionTlsCertificate"]; }
-        }
     }
 }

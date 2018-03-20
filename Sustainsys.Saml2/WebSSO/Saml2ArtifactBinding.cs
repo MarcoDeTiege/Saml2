@@ -97,12 +97,12 @@ namespace Sustainsys.Saml2.WebSso
             }.ToXml();
 
             var signingServiceCertificate = options.SPOptions.SigningServiceCertificate;
-            var artifactResolutionTlsCertificate = options.SPOptions.ArtifactResolutionTlsCertificate;
+            var resolver = options.SPOptions.ArtifactResolver;
 
             options.SPOptions.Logger.WriteVerbose("Calling idp " + idp.EntityId.Id + " to resolve artifact\n" + artifact);
 
             var response =
-                Saml2SoapBinding.SendSoapRequest(payload, arsUri, signingServiceCertificate, artifactResolutionTlsCertificate);
+                Saml2SoapBinding.SendSoapRequest(payload, arsUri, signingServiceCertificate, resolver);
 
             options.SPOptions.Logger.WriteVerbose("Artifact resolved returned\n" + response);
 

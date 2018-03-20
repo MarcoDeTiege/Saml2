@@ -228,22 +228,7 @@ namespace Sustainsys.Saml2.Tests.Configuration
             subject.SigningServiceCertificate.Should().Be(null);
         }
 
-        [TestMethod]
-        public void SPOptions_ArtifactResolutionTlsCertificate_NullWhenEmpty()
-        {
-            var subject = new SPOptions();
 
-            subject.ArtifactResolutionTlsCertificate.Should().Be(null);
-        }
-
-        [TestMethod]
-        public void SPOptions_ArtifactResolutionTlsCertificate_LoadsFromConfig()
-        {
-            var config = SustainsysSaml2Section.Current;
-            var subject = new SPOptions(config);
-
-            subject.ArtifactResolutionTlsCertificate.Should().NotBe(null);
-        }
 
         [TestMethod]
         public void SPOptions_DecryptionCertificate_EmptyWhenNoneAdded()
