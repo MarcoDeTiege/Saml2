@@ -79,7 +79,8 @@ namespace Sustainsys.Saml2.Saml2P
 
             id = new Saml2Id(xml.Attributes["ID"].Value);
 
-            ReadAndValidateInResponseTo(xml, expectedInResponseTo);
+			// Temporary skip validation
+            //ReadAndValidateInResponseTo(xml, expectedInResponseTo);
 
             issueInstant = DateTime.Parse(xml.Attributes["IssueInstant"].Value,
                 CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal);
